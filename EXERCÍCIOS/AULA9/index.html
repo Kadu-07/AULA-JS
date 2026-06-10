@@ -8,7 +8,7 @@
 </head>
 <body>
     
-    <div class="caixa">
+    <div class="caixa" id="login">
         <h1>Login</h1>
         
         <label for="email">E-mail</label>
@@ -17,9 +17,32 @@
         <label for="senha">Senha</label>
         <input type="password" name="senha" id="senha" placeholder="Ex: 1234" autocomplete="off">
         
+        <div class="caixa3">
+            <input type="checkbox" name="lembre" id="lembre">
+            <label for="lembre">Lembre-se de mim</label>
+            <a onclick="trocarpag()" href="#">Esqueceu a senha?</a>
+        </div>
+
         <div class="caixa2">
-            <button onclick="logar()">Login</button>
+            <button onclick="logar()">Entrar</button>
             <button onclick="registrar()">Registre-se</button>
+        </div>
+        
+        <p></p>
+    </div>
+
+    <div class="caixa" id="novasenha">
+        <h1>Trocar a senha</h1>
+
+        <label for="senha">Senha antiga</label>
+        <input type="password" name="senha" id="senha" placeholder="Ex: 1234" autocomplete="off">
+
+        <label for="senhanova">Senha nova</label>
+        <input type="password" name="senhanova" id="senhanova" placeholder="Ex: 1234" autocomplete="off">
+
+        <div class="caixa2">
+            <button onclick="voltar()">Voltar</button>
+            <button onclick="trocarsenha()">Trocar senha</button>
         </div>
         
         <p></p>

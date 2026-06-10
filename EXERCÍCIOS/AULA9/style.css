@@ -10,7 +10,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg,#5390d9,#64dfdf); 
+    background: linear-gradient(135deg,#168aad,#ffe5d9); 
     min-height: 100vh;
     color: #1b263b;
 }
@@ -19,19 +19,48 @@ h1 {
     padding: 50px;
 }
 
+p {
+    padding: 15px;
+}
+
 .caixa {
     display: flex;
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
-    height: 50vh;
     min-width: 300px;
     margin: 100px;
     gap: 5px;
     border: 2px solid #edf6f9;
-    background: linear-gradient(190deg, #4ea8de, #56cfe1);
+    background: linear-gradient(190deg, #94d2bd, #56cfe1);
     box-shadow: 0 0 15px #006d77;
     border-radius: 15px;
+}
+
+.caixa3 {
+    display: flex;
+    margin: 15px 30px 0px 30px;
+    padding: 15px;
+    text-decoration-color: gray;
+    color: gray;
+}
+
+.caixa3 label {
+    padding: 0px 30px 0px 10px;
+}
+
+.caixa3 input {
+    background: none;
+    border-width: 0px 0px 2px 0px;
+    border-bottom: 1px solid ;
+    border-color: rgb(68, 108, 110);
+    outline: none;
+    text-align: left;
+    width: 20px;
+}
+
+.caixa3 a {
+    color: rgb(63, 62, 62);
 }
 
 input {
@@ -41,15 +70,15 @@ input {
     border-color: rgb(68, 108, 110);
     outline: none;
     text-align: left;
-    
+    width: 80%;
 }
 
 label {
-    padding-right: 125px;
+    padding-right: 70%;
     color: #1b263bb2;
 }
 
-button {
+.caixa2 button {
     margin: 20px 10px 20px 10px ;
     padding: 15px;
     border: none;
@@ -62,8 +91,23 @@ button {
     font-weight: 600;
 }
 
-button:hover {
+.caixa2 button:hover {
     transition: 0.4s;
     transform: translateY(-1px);
     box-shadow: 0 10 15px rgba(0, 191, 255, 0.5);
+}
+
+#novasenha {
+    display: none;
+}
+
+#novasenha label {
+    padding-right: 51%;
+}
+
+@media screen and (max-width: 425px) {
+    label {
+        padding-right: 65%;
+        color: #1b263bb2;
+    }
 }
